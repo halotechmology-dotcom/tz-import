@@ -388,6 +388,15 @@
   @keyframes tzdrawer { from { transform: translateX(100%); } to { transform: translateX(0); } }
   @keyframes tzfade { from { opacity: 0; } to { opacity: 1; } }
   @keyframes tzrise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  button { -webkit-appearance: none; appearance: none; font-family: inherit; color: inherit; }
+  img, svg { max-width: 100%; }
+  /* ===== Celular: header compacto (logo + carrito + WhatsApp) ===== */
+  @media (max-width: 820px) {
+    header nav { display: none !important; }
+    header > div { padding: 10px 16px !important; gap: 10px !important; }
+    header > div > button { margin-left: auto; }
+  }
   ::selection { background: #ffffff; color: #fff; }
   :focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }
   summary::marker { color: #ffffff; }
